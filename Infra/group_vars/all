@@ -1,26 +1,18 @@
-env_name:
-  - mini-platform-dev
+env_name: mini-platform-dev
 
-rg_name:
-  - rg-mp-dev
+rg_name: rg-mp-dev
 
-rg_location:
-  - eastus
+rg_location: eastus
 
-vnet_name:
-  - vnet-mp-dev
+vnet_name: vnet-mp-dev
 
-subnet_name:
-  - subnet-mp-dev
+subnet_name: subnet-mp-dev
 
-public_ip_name:
-  - pub-ip-mp-dev
+public_ip_name: pub-ip-mp-dev
 
-net_sec_grp_name:
-  - net-sec-grp-mp-dev
+net_sec_grp_name: net-sec-grp-mp-dev
 
-net_interface_name:
-  - nic-mp-dev
+net_interface_name: nic-mp-dev
 
 ssh_user:
   - adminmpdev

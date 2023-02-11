@@ -26,18 +26,6 @@ This project aims to provide a streamlined and efficient way for developers to c
 ![Architecture](Img/architecture.jpg)
 
 ## Provisioning
-Build and run docker container with Azure CLI and Ansible.
-```sh
-# Build image with Azure cli and ansible
-docker build --no-cache -t manage-infra:1.0 .
-
-# Run container
-docker run -it --name mini-platform-managment manage-infra:1.0
-
-# Login to Azure
-az login
-```
-
 ![Provisioning](Img/azure-iaac.png)
 
 ## Prerequsities
@@ -56,29 +44,24 @@ az login
 ## Get started with Mini Development Platform
 **How to run the platform?**
 
+# Azure Cloud Shell
 Azure + Ansible
+Build and run docker container with Azure CLI and Ansible.
 
-Build image with Azure CLI and ansible
+# Docker
+Build image with Azure cli and ansible
 ```sh
-docker build -f PATH_TO_DOCKERFILE -t NAME:TAG 
+docker build --no-cache -t manage-infra:1.0 .
 ```
-Start a container with Azure CLI and ansible
+Run a container
 ```sh
-docker run --name CONTAINER_NAME -ti NAME:TAG 
+docker run -it --name mini-platform-managment manage-infra:1.0
 ```
 Login to Azure
 ```sh
 az login
 ```
-Run below command
-```sh
-# Go to project dir
-cd mini-platform
-
-# Create a dir for ssh keys
-mkdir ssh_keys
-```
-Run ansible playbook
+Run the ansible playbook
 ```sh
 ansible-playbook -i hosts -vvv mini-platform.yaml
 ```
