@@ -45,8 +45,12 @@ This project aims to provide a streamlined and efficient way for developers to c
 **How to run the platform?**
 
 # Azure Cloud Shell
-Azure + Ansible
-Build and run docker container with Azure CLI and Ansible.
+1. Login to Cloud Shell
+2. Upload Infra directory
+3. Run the ansible playbook
+   ```sh
+   ansible-playbook -i hosts -vvv mini-platform.yaml
+   ```
 
 # Docker
 Build image with Azure cli and ansible
