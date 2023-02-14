@@ -51,6 +51,14 @@ This project aims to provide a streamlined and efficient way for developers to c
    ```sh
    ansible-playbook -i hosts -vvv mini-platform.yaml
    ```
+4. Check public ip
+   ```sh
+   az vm show -d -g rg-mp-dev -n mini-platform-dev --query publicIps -o tsv
+   ```
+5. You can login as an admin user
+  ```sh
+  ssh adminmpdev@PUBLIC_IP -i adminmpdev
+  ```
 
 # Docker
 Build image with Azure cli and ansible
