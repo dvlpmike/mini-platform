@@ -57,7 +57,7 @@ This project aims to provide a streamlined and efficient way for developers to c
    ```
 5. You can login as an admin user
    ```sh
-   ssh adminmpdev@PUBLIC_IP -i adminmpdev
+   ssh adminmpdev@PUBLIC_IP -i ssh_keys/adminmpdev
    ```
 
 # Docker
